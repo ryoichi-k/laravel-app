@@ -48,7 +48,7 @@
     @endswitch
       <td>{{substr($m, 0, strlen($m)-2)}}({{$d}}曜日)
       </td>
-      <td>公休</td>
+      <td>@if($s == 0 || $s == 6) 公休 @endif</td>
       <td>10:00</td>
       <td>19:00</td>
       <td>08:00</td>
