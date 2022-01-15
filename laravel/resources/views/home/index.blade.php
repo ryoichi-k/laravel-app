@@ -15,7 +15,7 @@
       <th>残業時間</th>
       <th>備考</th>
     </tr>
-
+<!-- 曜日を抽出 -->
     @foreach($month as $m)
     @php
         $week = array('日', '月', '火', '水', '木', '金', '土');
