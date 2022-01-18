@@ -11,7 +11,4 @@
 |
 */
 
-Route::get('/hom', function () {
-    return view('welcome');
-});
 Route::get('/', 'HomeController@index');
