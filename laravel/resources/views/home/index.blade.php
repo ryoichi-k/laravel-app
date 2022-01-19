@@ -15,7 +15,7 @@
       <th>残業時間</th>
       <th>備考</th>
     </tr>
-    <tr>
+<!-- 曜日を抽出 -->
     @foreach($month as $m)
     @php
         $week = array('日', '月', '火', '水', '木', '金', '土');
@@ -37,9 +37,18 @@
             $d = $week[6];
         else
     @endphp
+    <!-- 土日に背景色 -->
+    @switch($s)
+        @case(0)
+        <tr style="background-color: #f5c8c8;">
+        @break
+        @case(6)
+        <tr style="background-color: #b4dcff;">
+        @break
+    @endswitch
       <td>{{substr($m, 0, strlen($m)-2)}}({{$d}}曜日)
       </td>
-      <td>公休</td>
+      <td>@if($s == 0 || $s == 6) 公休 @endif</td>
       <td>10:00</td>
       <td>19:00</td>
       <td>08:00</td>
