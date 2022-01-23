@@ -4,9 +4,9 @@
 @section('content')
 @include('nav')
 @include('home.sidebar')
-<table class="table table-bordered table-hover calender">
-    <tr>
-      <th>日付</th>
+<table class="table table-bordered table-hover calender text-center">
+    <tr class="table-header">
+      <th>日付<a href="/{{$thisYear}}/{{$nextMonth}}">次月へ</a></th>
       <th>休日区分</th>
       <th>出勤</th>
       <th>退勤</th>

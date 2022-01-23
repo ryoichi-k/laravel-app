@@ -12,3 +12,5 @@
 */
 Auth::routes();
 Route::get('/', 'HomeController@index');
+Route::get('/{year}/{month}', 'HomeController@showNextMonth');
+// Route::get('/next_month', 'HomeController@showNextMonth');
