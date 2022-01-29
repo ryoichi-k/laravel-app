@@ -12,3 +12,5 @@
 */
 Auth::routes();
 Route::get('/', 'HomeController@index');
+Route::resource('/informations', 'InformationController');
+Route::get('/{year}/{month}', 'HomeController@showNextMonth');

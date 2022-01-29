@@ -1,7 +1,11 @@
+/* 勤怠表 */
 .table{
+    text-align: center!important;
     border: solid;
+    border-color: #ADADAD;
     max-width: none;
-    width: 900px;
+    /* width: 900px; */
+    width: 77%;
     margin-left: 300px;
     margin-top: 100px;
 }
